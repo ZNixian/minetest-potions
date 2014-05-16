@@ -317,7 +317,7 @@ potions.register_potion("jump", "Jumping", "potions:jumping", 300, {
 	}
 })
 
-potions.register_potion("health", "Health", "potions:health", 300, {
+potions.register_potion("ouhealth", "One Use Health", "potions:ouhealth", 300, {
 	effect = "fixhp",
 	types = {
 		{
@@ -344,7 +344,7 @@ potions.register_potion("health", "Health", "potions:health", 300, {
 	}
 })
 
-potions.register_potion("ouhealth", "One Use Health", "potions:ouhealth", 300, {
+potions.register_potion("health", "One Use Health", "potions:health", 300, {
 	effect = "fixhp",
 	texture = "health",
 	types = {
@@ -485,6 +485,15 @@ potions.register_potion("air", "Air", "potions:air", 300, {
 --		gravity = 0,
 --	},
 --})
+
+minetest.register_craft({
+	output = "potions:speed_add1",
+	recipe = {
+		{'','default:drinking_glass','dye:yellow'},
+		{'','',''},
+		{'','',''},
+	}
+})
 
 minetest.register_on_joinplayer(function(player)
 	potions.players[player:get_player_name()] = {
