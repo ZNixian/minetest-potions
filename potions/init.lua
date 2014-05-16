@@ -319,7 +319,6 @@ potions.register_potion("jump", "Jumping", "potions:jumping", 300, {
 
 potions.register_potion("ouhealth", "One Use Health", "potions:ouhealth", 300, {
 	effect = "fixhp",
-	texture = "health",
 	types = {
 		{
 			type = 1,
@@ -374,7 +373,6 @@ potions.register_potion("health", "Health", "potions:health", 300, {
 
 potions.register_potion("ouair", "One Use Air", "potions:ouair", 300, {
 	effect = "air",
-	texture = "air",
 	types = {
 		{
 			type = 1,
