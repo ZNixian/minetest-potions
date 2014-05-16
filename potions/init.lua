@@ -487,9 +487,9 @@ potions.register_potion("air", "Air", "potions:air", 300, {
 --})
 
 minetest.register_craft({
-	output = "vessels:speed_add1",
+	output = "potions:speed_add1",
 	recipe = {
-		{'','default:drinking_glass','dye:cyan'},
+		{'','vessels:drinking_glass_with_water','dye:cyan'},
 		{'','',''},
 		{'','',''},
 	}
